@@ -1,0 +1,26 @@
+'use strict';
+
+{
+  const open = document.getElementById('open');
+  const close = document.getElementById('close');
+  const modal = document.getElementById('modal');
+  const mask = document.getElementById('mask');
+
+  open.addEventListener('click', () => {
+  //addEventListener→クリックしたときの処理を指定することができるイベント
+    modal.classList.remove('hidden');
+    mask.classList.remove('hidden');
+    //openをクリックした時にhiddenクラスを取り除く
+  });
+
+  close.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    mask.classList.add('hidden');
+    //openをクリックした時にhiddenクラスを加える
+  });
+
+  mask.addEventListener('click', () => {
+    close.click();
+    //mask(灰色部分をクリックした時に関数を動かす)
+  });
+}

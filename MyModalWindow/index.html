@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal Window</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="open">   
+    <!-- //① -->
+    詳細を見る
+  </div>
+
+  <div id="mask" class="hidden"></div>
+  
+  <section id="modal" class="hidden">   
+    <!-- //② -->
+    <p>こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。</p>
+    <div id="close">
+      閉じる
+    </div>
+  </section>
+  <!-- //①と②の順番が逆の時、表示がおかしくなる -->
+  <!-- //maskより、modalを上にする必要があるので、z-indexを使う -->
+  
+  <script src="js.main/js"></script>
+</body>
+</html>
